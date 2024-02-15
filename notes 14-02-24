@@ -1,0 +1,28 @@
+gpio is used for:
+     reading digital signal
+     issuing interrupt
+     generating triggervfor external component
+
+gpio pin -  generic pin which value consists of one of two voltage setting
+gpio port - platforms defined grouping of gpio pins(stm32 16 pins)
+
+to connect many pins the multiplexing method is used 
+pins such as(urt pins ,i2c,spc) each consists of two pins multiplexing is used to connect all these pins.
+
+after reset  the default gpio pins are in input mode
+
+gpio input mode
+
+default gpio pin will be in
+
+ic state - unpredictable state or floating state
+neither high state (1) or ground state(0)
+
+keeping pins in high state leads to excess power consumption
+
+gpio output mode
+
+output will be in open drain state
+
+open drain state -0
+push/pull configuration 
